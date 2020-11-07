@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+  </head>
+  <body>
+
+    <table id="table">
+      <tr>
+        <td>1:1</td>
+        <td>1:2</td>
+        <td>1:3</td>
+      </tr>
+      <tr>
+        <td>2:1</td>
+        <td>2:2</td>
+        <td>2:3</td>
+      </tr>
+      <tr>
+        <td>3:1</td>
+        <td>3:2</td>
+        <td>3:3</td>
+      </tr>
+    </table>
+
+    <div id="elem">
+      Tatatataarratata
+    </div>
+
+    <script>
+      let table = document.body.firstElementChild;
+      for (let i = 0; i < table.rows.length; i++) {
+        let row = table.rows[i];
+        row.cells[i].style.backgroundColor = 'red';
+      }
+
+      table = document.getElementById('table');
+      table.style.background = 'blue';
+
+    </script>
+  </body>
+</html>
