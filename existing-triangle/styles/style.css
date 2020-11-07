@@ -1,0 +1,46 @@
+h1 {
+  	color: white;
+  font-size: 30px;
+  text-align:center;
+}
+h2{
+    color: whitesmoke;
+}
+body {
+	padding: 0 20px 20px 20px;
+	background-color: darkgray;
+  font-family: tahoma;
+   text-align: center;
+
+}
+
+p {
+	background-color: white;
+}
+
+input {
+    padding: 0 0px 0px 0px;
+    width: 100px;
+    background-color: #ADD8E6;
+    font-size: 40px;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+
+div.button-contener{
+    display: flex;
+    justify-content: flex-start;
+    color: whitesmoke;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: whitesmoke;
+    background-color: transparent;
+}

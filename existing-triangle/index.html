@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Existing Triangle</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <h1>Existing Triangle</h1>
+
+    <script>
+      function pidor() {
+        console.log('Privetiki');
+        let massage = document.getElementById('massage');
+        let sides = document.getElementsByTagName('input');
+        console.log(sides);
+        let side1 = Number(sides[0].value);
+        let side2 = Number(sides[1].value);
+        let side3 = Number(sides[2].value);
+        const triangle = [side1, side2, side3];
+        const maxSide = Math.max(...triangle);
+        const sum = side1 + side2 + side3; //сумма всех сторон
+        const sumOtherSides = sum - maxSide;
+        console.log(maxSide);
+        console.log(sum);
+        console.log(sumOtherSides);
+        if (maxSide < sumOtherSides) {
+          massage.innerHTML = 'Triangle is exist.';
+        } else {
+          massage.innerHTML = 'Triangle is not exist.';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Enter three sides of one triangle. And you will find out if such a triangle exists.</h2>
+
+    <div id="massage">Здесь будет сообщение о существовании триугольника.</div>
+
+    <sides class="sides">
+      <input type="number" name="side1" />
+      <input type="number" name="side2" />
+      <input type="number" name="side3" />
+    </sides>
+
+    <div class="button-contener">
+      <button onclick="pidor()">Enter</button>
+    </div>
+  </body>
+</html>
